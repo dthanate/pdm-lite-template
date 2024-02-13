@@ -1,7 +1,7 @@
 let g:python3_host_prog=$VIRTUAL_ENV . '/bin'
 let g:ale_linters={'python': ['flakehell', 'mypy', 'pylint', 'bandit']}
 let g:ale_fixers={'python': ['black', 'reorder-python-imports', 'remove_trailing_lines', 'trim_whitespace']}
-let g:ale_fix_on_save=1
+% let g:ale_fix_on_save=1  % tricky
 
 set expandtab
 set mouse=

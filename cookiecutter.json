@@ -1,8 +1,7 @@
 {
   "author_name": "Thanate boat Dhirasakdanon",
   "author_email": "dthanate@gmail.com",
-  "project_name": "a-python-project",
-  "repo_name": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
+  "repo_name": "a-python-project",
   "package_name": "{{ cookiecutter.repo_name|replace('-', '_') }}",
   "project_desc": "A Python project about something",
   "python_executable": "python3.12",
