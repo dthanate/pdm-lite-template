@@ -130,4 +130,5 @@ pycodestyle = ["+*"]
 pyflakes = ["+*"]
 
 [tool.bandit]
+exclude_dirs = ["tests"]
 skips = ["B403", "B301", "B101"]
