@@ -1,0 +1,12 @@
+[install]
+cache = true
+
+[python]
+use_venv = true
+use_pyenv = false
+
+[venv]
+in_project = true
+
+[strategy]
+update = "all"

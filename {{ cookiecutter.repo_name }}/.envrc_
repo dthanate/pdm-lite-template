@@ -1,0 +1,2 @@
+eval $(pdm venv activate in-project)
+export PATH="`dirname $VIRTUAL_ENV`/bin:$PATH"
