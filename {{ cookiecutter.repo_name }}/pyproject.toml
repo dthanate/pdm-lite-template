@@ -11,8 +11,10 @@ dependencies = [
     "more-itertools>=10.2.0",
     "ujson>=5.9.0",
     "pydantic[email]>=2.6.1",
+    "pydantic-extra-types>=2.5.0",
     "fsspec>=2024.2.0",
     "cython>=3.0.8",
+    "python-dateutil>=2.8.2",
 ]
 requires-python = "{{ cookiecutter.python_version }}"
 readme = "README.md"
@@ -32,7 +34,9 @@ nvim = [
 test = [
     "pytest>=8.0.0",
     "pytest-xdist>=3.5.0",
-    "hypothesis>=6.98.4",
+    "pytest-randomly>=3.15.0",
+    "pytest-cov>=4.1.0",
+    "hypothesis[cli,codemods,dpcontracts,lark,pytz,dateutil,numpy,array_api]>=6.98.4",
 ]
 dev = [
     "mypy>=1.8.0",
