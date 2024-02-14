@@ -1,18 +1,18 @@
-import pickle  # nosec B403
+import pickle
 from os import PathLike
 from pathlib import Path
 from typing import BinaryIO
 from typing import cast
 from typing import Optional
 
-import dill.settings  # nosec B403
+import dill.settings
 import fsspec
 from fsspec.core import OpenFile
 from fsspec.spec import AbstractFileSystem
 
 
 def __dill_load(fhandle: BinaryIO) -> object:
-    return dill.load(  # nosec B301
+    return dill.load(
         fhandle,
         ignore=True,
         byref=True,
@@ -22,7 +22,7 @@ def __dill_load(fhandle: BinaryIO) -> object:
 
 
 def __pickle_load(fhandle: BinaryIO) -> object:
-    return pickle.load(  # nosec B301
+    return pickle.load(
         fhandle,
         fix_imports=False,
     )
