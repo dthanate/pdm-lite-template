@@ -36,6 +36,7 @@ test = [
     "pytest-xdist>=3.5.0",
     "pytest-randomly>=3.15.0",
     "pytest-cov>=4.1.0",
+    "pytest-beartype>=0.0.2",
     "hypothesis[cli,codemods,dpcontracts,lark,pytz,dateutil,numpy,array_api]>=6.98.4",
 ]
 dev = [
@@ -50,6 +51,7 @@ dev = [
     "mypy-extensions>=1.0.0",
     "pysnooper>=1.2.0",
     "icecream>=2.1.3",
+    "beartype>=0.17.2",
 ]
 type = [
     "types-ujson>=5.9.0.0",
