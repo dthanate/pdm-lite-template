@@ -9,5 +9,5 @@
   "black_python_target": "py312",
   "mypy_python_target": "3.12",
   "package_version": "0.1.0",
-  "license": ["Proprietary", "MIT"]
+  "license": ["Proprietary", "MIT", "BSD-3"]
 }
