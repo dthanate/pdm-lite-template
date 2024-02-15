@@ -2,10 +2,10 @@
   "author_name": "Thanate boat Dhirasakdanon",
   "author_email": "dthanate@gmail.com",
   "repo_name": "a-python-project",
-  "package_name": "{{ cookiecutter.repo_name|replace('-', '_') }}",
+  "package_name": "{{ cookiecutter.repo_name.lower()|replace(' ', '_')|replace('-', '_') }}",
   "project_desc": "A Python project about something",
   "python_executable": "python3.12",
   "python_version": ">=3.12,<3.13",
   "version": "0.1.0",
-  "license": "MIT"
+  "license": ["Proprietary", "MIT"]
 }
