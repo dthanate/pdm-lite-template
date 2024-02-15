@@ -1,6 +1,6 @@
 [project]
 name = "{{ cookiecutter.package_name }}"
-version = "{{ cookiecutter.version }}"
+version = "{{ cookiecutter.package_version }}"
 description = "{{ cookiecutter.project_desc }}"
 authors = [
     {name = "{{ cookiecutter.author_name }}", email = "{{ cookiecutter.author_email }}"},
@@ -19,7 +19,7 @@ dependencies = [
     "fsspec>=2024.2.0",
     "python-dateutil>=2.8.2",
 ]
-requires-python = "{{ cookiecutter.python_version }}"
+requires-python = "{{ cookiecutter.python_version_range }}"
 readme = "README.md"
 license = {text = "{{ cookiecutter.license }}"}
 
@@ -90,10 +90,10 @@ disable = [
 
 [tool.black]
 line-length = 140
-target-version = ["py312"]
+target-version = ["{{ cookiecutter.black_python_target }}"]
 
 [tool.mypy]
-python_version = "3.12"
+python_version = "{{ cookiecutter.mypy_python_target }}"
 plugins = ["numpy.typing.mypy_plugin", "pydantic.mypy"]
 
 follow_imports = "normal"
