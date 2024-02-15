@@ -78,6 +78,7 @@ disable = [
   "line-too-long",
   "import-outside-toplevel",
   "wrong-import-position",
+  "wrong-import-order",
   "ungrouped-imports",
   "too-many-arguments",
   "too-many-instance-attributes",
