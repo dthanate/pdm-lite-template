@@ -11,3 +11,4 @@ with_pip = true
 
 [strategy]
 update = "all"
+save = "minimum"
