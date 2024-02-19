@@ -1,0 +1,14 @@
+{
+    // Theme
+    // @jupyterlab/apputils-extension:themes
+    // Theme manager settings.
+    // *************************************
+
+    // Adaptive Theme
+    // Synchronize visual styling theme with system settings
+    "adaptive-theme": true,
+
+    // Scrollbar Theming
+    // Enable/disable styling of the application scrollbars
+    "theme-scrollbars": true
+}
