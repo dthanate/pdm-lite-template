@@ -4,7 +4,7 @@ from decimal import Decimal
 
 from pyproject_metadata import StandardMetadata
 
-from path_helper import get_project_home
+from .path_helper import get_project_home
 
 
 def get_pyproject_standard_metadata() -> StandardMetadata:
