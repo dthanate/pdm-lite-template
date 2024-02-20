@@ -35,6 +35,7 @@ dataframe = [
     "pandas[performance,computation,parquet,fss,compression]>=2.2.0",
     "polars[pandas,numpy,pyarrow,fsspec]>=0.20.10",
 ]
+all = ["numerical", "pydantic", "dataframe"]
 
 [build-system]
 requires = ["pdm-backend"]
