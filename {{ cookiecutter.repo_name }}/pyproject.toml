@@ -35,7 +35,11 @@ dataframe = [
     "pandas[performance,computation,parquet,fss,compression]>=2.2.0",
     "polars[pandas,numpy,pyarrow,fsspec]>=0.20.10",
 ]
-all = ["numerical", "pydantic", "dataframe"]
+ml = [
+    "scikit-learn>=1.4.1",
+    "xgboost>=2.0.3",
+]
+all = ["{{ cookiecutter.package_name }}[numerical,pydantic,dataframe,ml]"]
 
 [build-system]
 requires = ["pdm-backend"]
@@ -46,7 +50,7 @@ distribution = true
 
 [tool.pdm.resoution]
 respect-source-order = true
-allow-prereleases = false
+allow-prereleases = true
 
 [tool.pdm.dev-dependencies]
 nvim = [
