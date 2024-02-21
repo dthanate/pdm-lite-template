@@ -40,7 +40,10 @@ ml = [
     "scikit-learn>=1.4.1",
     "xgboost>=2.0.3",
 ]
-all = ["{{ cookiecutter.package_name }}[numerical,pydantic,dataframe,ml]"]
+duckdb = [
+    "duckdb>=0.10.0",
+]
+all = ["{{ cookiecutter.package_name }}[numerical,pydantic,dataframe,ml,duckdb]"]
 
 [build-system]
 requires = ["pdm-backend"]
