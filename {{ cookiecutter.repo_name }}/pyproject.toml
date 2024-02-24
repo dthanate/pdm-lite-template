@@ -76,7 +76,7 @@ dev = [
     "black>=24.2.0",
     "bandit>=1.7.7",
     "reorder-python-imports>=3.12.0",
-    "flakehell>=0.9.0",
+    "flake8-pyproject>=1.2.3",
     "mypy-extensions>=1.0.0",
     "pysnooper>=1.2.0",
     "icecream>=2.1.3",
@@ -196,14 +196,9 @@ reportUnusedExpression = "none"
 reportConstantRedefinition = "none"
 reportUntypedFunctionDecorator = "none"
 
-[tool.flakehell]
+[tool.flake8]
 max_line_length = 140
 show_source = true
-format = "grouped"
-
-[tool.flakehell.plugins]
-pycodestyle = ["+*"]
-pyflakes = ["+*"]
 
 [tool.bandit]
 exclude_dirs = ["tests"]
