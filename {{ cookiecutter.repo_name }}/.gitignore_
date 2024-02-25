@@ -82,6 +82,7 @@ target/
 Untitled*.ipynb
 
 # IPython
+.ipython/
 profile_default/
 ipython_config.py
 
@@ -126,6 +127,7 @@ celerybeat.pid
 
 # Environments
 .env
+.envrc
 .venv
 env/
 venv/

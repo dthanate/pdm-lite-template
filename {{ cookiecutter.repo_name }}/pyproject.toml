@@ -3,7 +3,7 @@ name = "{{ cookiecutter.package_name }}"
 version = "{{ cookiecutter.package_version }}"
 description = "{{ cookiecutter.project_desc }}"
 authors = [
-    {name = "{{ cookiecutter.author_name }}", email = "{{ cookiecutter.author_email }}"},
+    { name = "{{ cookiecutter.author_name }}", email = "{{ cookiecutter.author_email }}" },
 ]
 dependencies = [
     "cython>=3.0.8",
@@ -17,7 +17,7 @@ dependencies = [
 ]
 requires-python = "{{ cookiecutter.python_version_range }}"
 readme = "README.md"
-license = {text = "{{ cookiecutter.license }}"}
+license = { text = "{{ cookiecutter.license }}" }
 
 [project.optional-dependencies]
 numerical = [
