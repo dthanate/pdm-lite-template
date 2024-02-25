@@ -1,0 +1,26 @@
+{
+  "recommendations": [
+    "ms-python.black-formatter",
+    "rubymaniac.vscode-direnv",
+    "editorconfig.editorconf",
+    "ms-python.flake8",
+    "ms-python.gather",
+    "ms-toolsai.jupyter",
+    "ms-toolsai.vscode-jupyter-cell-tags",
+    "ms-toolsai.jupyter-keymap",
+    "ms-toolsai.jupyter-renderers",
+    "ms-toolsai.vscode-jupyter-slideshow",
+    "magicstack.magicpython",
+    "ms-python.mypy-type-checker",
+    "ms-python.vscode-pylance",
+    "ms-python.pylint",
+    "ms-python.python",
+    "donjayamanne.python-environment-manager",
+    "kevinrose.vsc-python-indent",
+    "hyesun.py-paste-indent",
+    "njqdev.vscode-python-typehint",
+    "thebutlah.reorder-python-imports",
+    "nwgh.bandit",
+    "gabdug.pdm"
+  ]
+}
