@@ -132,7 +132,7 @@ suggestion-mode = "yes"
 unsafe-load-any-extension = "yes"
 
 [tool.pylint.FORMAT]
-max-line-length = 140
+max-line-length = 128
 
 [tool.pylint."MESSAGE CONTROL"]
 disable = [
@@ -157,7 +157,7 @@ disable = [
 ]
 
 [tool.black]
-line-length = 140
+line-length = 128
 target-version = ["{{ cookiecutter.black_python_target }}"]
 
 [tool.mypy]
@@ -198,7 +198,7 @@ reportConstantRedefinition = "none"
 reportUntypedFunctionDecorator = "none"
 
 [tool.flake8]
-max_line_length = 140
+max_line_length = 128
 show_source = true
 
 [tool.bandit]
