@@ -6,7 +6,6 @@ authors = [
     { name = "{{ cookiecutter.author_name }}", email = "{{ cookiecutter.author_email }}" },
 ]
 dependencies = [
-    "cython>=3.0.8",
     "dill>=0.3.8",
     "more-itertools>=10.2.0",
     "ujson>=5.9.0",
@@ -20,6 +19,10 @@ readme = "README.md"
 license = { text = "{{ cookiecutter.license }}" }
 
 [project.optional-dependencies]
+cbinding = [
+    "cython>=3.0.8",
+    "pybind11>=2.11.1",
+]
 dataframe = [
     "pandas[performance,computation,parquet,fss,compression]>=2.2.0",
     "polars[pandas,numpy,pyarrow,fsspec]>=0.20.10",
@@ -46,7 +49,7 @@ pydantic = [
 sympy = [
     "sympy>=1.12",
 ]
-all = ["{{ cookiecutter.package_name }}[dataframe,duckdb,ml,numerical,pydantic,sympy]"]
+all = ["{{ cookiecutter.package_name }}[cbinding,dataframe,duckdb,ml,numerical,pydantic,sympy]"]
 
 [build-system]
 requires = ["pdm-backend"]
