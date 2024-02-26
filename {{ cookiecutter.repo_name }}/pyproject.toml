@@ -58,6 +58,10 @@ build-backend = "pdm.backend"
 [tool.pdm]
 distribution = true
 
+[tool.pdm.version]
+source = "file"
+path = "{{ cookiecutter.package_name }}/__init__.py"
+
 [tool.pdm.resoution]
 respect-source-order = true
 allow-prereleases = true
