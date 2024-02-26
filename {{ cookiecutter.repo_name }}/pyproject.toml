@@ -90,7 +90,6 @@ type = [
 repl = [
     "ipython>=8.22.1",
     "ptpython>=3.0.26",
-    "bpython>=0.24",
 ]
 jupyter = [
     "jupyterlab>=4.1.2",
