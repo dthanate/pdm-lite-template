@@ -1,6 +1,7 @@
 [project]
 name = "{{ cookiecutter.package_name }}"
 version = "{{ cookiecutter.package_version }}"
+dynamic = ["version"]
 description = "{{ cookiecutter.project_desc }}"
 authors = [
     { name = "{{ cookiecutter.author_name }}", email = "{{ cookiecutter.author_email }}" },
