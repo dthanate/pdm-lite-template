@@ -43,7 +43,10 @@ pydantic = [
     "pydantic[email]>=2.6.1",
     "pydantic-extra-types>=2.5.0",
 ]
-all = ["{{ cookiecutter.package_name }}[dataframe,duckdb,ml,numerical,pydantic]"]
+sympy = [
+    "sympy>=1.12",
+]
+all = ["{{ cookiecutter.package_name }}[dataframe,duckdb,ml,numerical,pydantic,sympy]"]
 
 [build-system]
 requires = ["pdm-backend"]
