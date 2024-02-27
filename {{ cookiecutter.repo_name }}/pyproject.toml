@@ -59,7 +59,7 @@ distribution = true
 
 [tool.pdm.version]
 source = "file"
-path = "{{ cookiecutter.package_name }}/__init__.py"
+path = "src/{{ cookiecutter.package_name }}/_version.py"
 
 [tool.pdm.resoution]
 respect-source-order = true
