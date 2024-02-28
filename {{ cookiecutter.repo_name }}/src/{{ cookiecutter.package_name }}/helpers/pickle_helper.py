@@ -7,7 +7,6 @@ from typing import Optional
 
 import dill.settings
 import fsspec
-from fsspec.core import OpenFile
 from fsspec.spec import AbstractFileSystem
 
 
@@ -57,7 +56,8 @@ def __pickle_dump(
 
 
 def pickle_load(
-    flike: str | bytes | PathLike[str] | BinaryIO | OpenFile | Path,
+    flike: str | bytes | PathLike[str] | BinaryIO | Path,
+    /,
     *,
     use_dill: bool = False,
     compression: Optional[str] = None,
@@ -78,14 +78,13 @@ def pickle_load(
             compression=compression,
         ) as f:
             return load(cast(BinaryIO, f))
-    if isinstance(flike, OpenFile):
-        return load(cast(BinaryIO, flike))
     return load(flike)
 
 
 def pickle_dump(
     obj: object,
-    flike: str | bytes | PathLike[str] | BinaryIO | OpenFile | Path,
+    flike: str | bytes | PathLike[str] | BinaryIO | Path,
+    /,
     *,
     protocol: int = 5,
     use_dill: bool = False,
@@ -101,14 +100,12 @@ def pickle_dump(
         with fsspec.open(flike, mode="wb", compression=compression) as f:
             dump(obj, cast(BinaryIO, f), protocol)
             return
-    if isinstance(flike, OpenFile):
-        dump(obj, cast(BinaryIO, flike), protocol)
-        return
     dump(obj, flike, protocol)
 
 
 def dill_load(
-    flike: str | bytes | PathLike[str] | BinaryIO | OpenFile | Path,
+    flike: str | bytes | PathLike[str] | BinaryIO | Path,
+    /,
     *,
     compression: Optional[str] = None,
     filesystem: Optional[AbstractFileSystem] = None,
@@ -128,14 +125,13 @@ def dill_load(
             compression=compression,
         ) as f:
             return load(cast(BinaryIO, f))
-    if isinstance(flike, OpenFile):
-        return load(cast(BinaryIO, flike))
     return load(flike)
 
 
 def dill_dump(
     obj: object,
-    flike: str | bytes | PathLike[str] | BinaryIO | OpenFile | Path,
+    flike: str | bytes | PathLike[str] | BinaryIO | Path,
+    /,
     *,
     protocol: int = 5,
     compression: Optional[str] = None,
@@ -150,7 +146,4 @@ def dill_dump(
         with fsspec.open(flike, mode="wb", compression=compression) as f:
             dump(obj, cast(BinaryIO, f), protocol)
             return
-    if isinstance(flike, OpenFile):
-        dump(obj, cast(BinaryIO, flike), protocol)
-        return
     dump(obj, flike, protocol)
