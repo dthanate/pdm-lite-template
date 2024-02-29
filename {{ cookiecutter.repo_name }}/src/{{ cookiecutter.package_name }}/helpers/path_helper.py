@@ -3,8 +3,13 @@ from pathlib import Path
 from typing import Final
 
 
-PACKAGE_ROOT: Final[str] = path.normpath(path.join(path.dirname(__file__), ".."))
+__PACKAGE_ROOT: Final[str] = path.normpath(path.join(path.dirname(__file__), ".."))
 
 
 def get_package_root() -> Path:
-    return Path(PACKAGE_ROOT)
+    """The top directory of the package.
+
+    Returns:
+        pathlib.Path object pointing to the correct directory.
+    """
+    return Path(__PACKAGE_ROOT)
