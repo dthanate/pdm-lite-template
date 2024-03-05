@@ -10,7 +10,7 @@ dependencies = [
     "more-itertools>=10.2.0",
     "ujson>=5.9.0",
     "pyjson5>=1.6.6",
-    "fsspec[git,http,sftp,ssh]>=2024.2.0",
+    "fsspec[git,http,https,sftp,ssh,libarchive]>=2024.2.0",
     "python-dateutil>=2.8.2",
 ]
 requires-python = "{{ cookiecutter.python_version_range }}"
