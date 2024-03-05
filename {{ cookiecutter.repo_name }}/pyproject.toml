@@ -25,6 +25,7 @@ cbinding = [
 dataframe = [
     "pandas[performance,computation,parquet,fss,compression]>=2.2.0",
     "polars[pandas,numpy,pyarrow,fsspec]>=0.20.10",
+    "clevercsv[full]>=0.8.2",
 ]
 duckdb = [
     "duckdb>=0.10.0",
