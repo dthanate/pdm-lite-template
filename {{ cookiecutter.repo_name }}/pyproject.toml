@@ -33,6 +33,7 @@ duckdb = [
 ml = [
     "scikit-learn>=1",
     "xgboost>=2",
+    "catboost>=2",
 ]
 numerical = [
     "numpy>=1",
@@ -49,8 +50,12 @@ pydantic = [
 sympy = [
     "sympy>=1",
 ]
+tui = [
+    "rich>=13",
+    "textual>=0.52",
+]
 all = [
-    "{{ cookiecutter.package_name }}[cbinding,dataframe,duckdb,ml,numerical,pydantic,sympy]"
+    "{{ cookiecutter.package_name }}[cbinding,dataframe,duckdb,ml,numerical,pydantic,sympy,tui]"
 ]
 
 [build-system]
@@ -126,6 +131,9 @@ plotting = [
 eda = [
     "ydata-profiling[notebook,unicode]>=4",
     "sweetviz>=2",
+]
+argcomplete = [
+    "argcomplete>=3",
 ]
 
 # [[tool.pdm.source]]
