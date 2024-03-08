@@ -22,14 +22,14 @@ def configure(repl):
     :param repl: `PythonRepl` instance.
     """
     # Show function signature (bool).
-    repl.show_signature = True
+    repl.show_signature = False
 
     # Show docstring (bool).
     repl.show_docstring = True
 
     # Show the "[Meta+Enter] Execute" message when pressing [Enter] only
     # inserts a newline instead of executing the code.
-    repl.show_meta_enter_message = True
+    repl.show_meta_enter_message = False
 
     # Show completions. (NONE, POP_UP, MULTI_COLUMN or TOOLBAR)
     repl.completion_visualisation = CompletionVisualisation.MULTI_COLUMN
@@ -54,14 +54,14 @@ def configure(repl):
     repl.highlight_matching_parenthesis = True
 
     # Line wrapping. (Instead of horizontal scrolling.)
-    repl.wrap_lines = True
+    repl.wrap_lines = False
 
     # Mouse support.
     repl.enable_mouse_support = False
 
     # Complete while typing. (Don't require tab before the
     # completion menu is shown.)
-    repl.complete_while_typing = True
+    repl.complete_while_typing = False
 
     # Fuzzy and dictionary completion.
     repl.enable_fuzzy_completion = True
@@ -88,7 +88,7 @@ def configure(repl):
     # Note: When enable, please disable the `complete_while_typing` option.
     #       otherwise, when there is a completion available, the arrows will
     #       browse through the available completions instead of the history.
-    repl.enable_history_search = False
+    repl.enable_history_search = True
 
     # Enable auto suggestions. (Pressing right arrow will complete the input,
     # based on the history.)
@@ -96,7 +96,7 @@ def configure(repl):
 
     # Enable open-in-editor. Pressing C-x C-e in emacs mode or 'v' in
     # Vi navigation mode will open the input in the current editor.
-    repl.enable_open_in_editor = True
+    repl.enable_open_in_editor = False
 
     # Enable system prompt. Pressing meta-! will display the system prompt.
     # Also enables Control-Z suspend.
