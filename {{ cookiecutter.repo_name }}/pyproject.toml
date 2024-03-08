@@ -33,7 +33,7 @@ duckdb = [
 ml = [
     "scikit-learn>=1",
     "xgboost>=2",
-    "catboost>=2",
+    "catboost>=1",
 ]
 numerical = [
     "numpy>=1",
