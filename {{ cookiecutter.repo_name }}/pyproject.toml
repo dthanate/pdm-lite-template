@@ -129,7 +129,7 @@ plotting = [
     "plotly>=5",
 ]
 eda = [
-    # "ydata-profiling[notebook,unicode]>=4",  # only works for python >= 3.12
+    # "ydata-profiling[notebook,unicode]>=4",  # only works for python < 3.12
     "sweetviz>=2",
 ]
 argcomplete = [
