@@ -181,6 +181,7 @@ disable = [
     "too-many-return-statements",
     "too-many-nested-blocks",
     "too-many-boolean-expressions",
+    "trailing-newlines",
 ]
 
 [tool.black]
@@ -227,7 +228,7 @@ reportUntypedFunctionDecorator = "none"
 [tool.flake8]
 max_line_length = 128
 show_source = true
-ignore = ["E501", "W503"]
+ignore = ["E501", "W503", "W391"]
 
 [tool.bandit]
 exclude_dirs = ["tests"]
