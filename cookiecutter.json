@@ -4,7 +4,7 @@
   "project_desc": "A Python project about something",
   "author_name": "Thanate boat Dhirasakdanon",
   "author_email": "dthanate@gmail.com",
-  "python_executable": "python3.12",
+  "python_executable": "/usr/local/python3.12/bin/python3.12",
   "python_version_range": ">=3.12,<3.13",
   "black_python_target": "py312",
   "mypy_python_target": "3.12",
